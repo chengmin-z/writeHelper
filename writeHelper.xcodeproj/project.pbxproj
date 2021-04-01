@@ -69,7 +69,6 @@
 		D35E281F2612A94A006E6455 = {
 			isa = PBXGroup;
 			children = (
-				D38FFCD52616235B004DCA90 /* Utility */,
 				D35E282A2612A94A006E6455 /* writeHelper */,
 				D35E28292612A94A006E6455 /* Products */,
 				D28AF65B9C35D6013382DC9B /* Pods */,
@@ -94,6 +93,7 @@
 				D35E28372612A94C006E6455 /* Assets.xcassets */,
 				D35E283C2612A94C006E6455 /* Info.plist */,
 				D38FFCCA26161420004DCA90 /* LaunchScreen.storyboard */,
+				D38FFCD52616235B004DCA90 /* WHUtility */,
 				D38FFCDE26163014004DCA90 /* WHHomeComponent */,
 				D38FFCCF26161774004DCA90 /* WHStructComponent */,
 			);
@@ -111,12 +111,12 @@
 			path = WHStructComponent;
 			sourceTree = "<group>";
 		};
-		D38FFCD52616235B004DCA90 /* Utility */ = {
+		D38FFCD52616235B004DCA90 /* WHUtility */ = {
 			isa = PBXGroup;
 			children = (
 				D38FFCD6261623B2004DCA90 /* WHColorDefine.h */,
 			);
-			path = Utility;
+			path = WHUtility;
 			sourceTree = "<group>";
 		};
 		D38FFCDE26163014004DCA90 /* WHHomeComponent */ = {
