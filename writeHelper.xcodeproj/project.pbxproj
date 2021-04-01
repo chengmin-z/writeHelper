@@ -10,21 +10,31 @@
 		958DB2E82EE83247145248DC /* Pods_writeHelper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41241FBC025BF5FCFE2D6632 /* Pods_writeHelper.framework */; };
 		D35E282D2612A94A006E6455 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D35E282C2612A94A006E6455 /* AppDelegate.m */; };
 		D35E28382612A94C006E6455 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D35E28372612A94C006E6455 /* Assets.xcassets */; };
-		D35E283B2612A94C006E6455 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D35E28392612A94C006E6455 /* LaunchScreen.storyboard */; };
 		D35E283E2612A94C006E6455 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D35E283D2612A94C006E6455 /* main.m */; };
+		D38FFCCB26161420004DCA90 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D38FFCCA26161420004DCA90 /* LaunchScreen.storyboard */; };
+		D38FFCD2261617F7004DCA90 /* WHTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = D38FFCD1261617F7004DCA90 /* WHTabBarController.m */; };
+		D38FFCDA26162F16004DCA90 /* WHNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = D38FFCD926162F16004DCA90 /* WHNavigationController.m */; };
+		D38FFCE32616307F004DCA90 /* WHHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D38FFCE22616307F004DCA90 /* WHHomeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		41241FBC025BF5FCFE2D6632 /* Pods_writeHelper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_writeHelper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		821358C87B861FC15CDDD7BD /* Pods-writeHelper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-writeHelper.release.xcconfig"; path = "Target Support Files/Pods-writeHelper/Pods-writeHelper.release.xcconfig"; sourceTree = "<group>"; };
 		AFF190D27F167E4B4124DABB /* Pods-writeHelper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-writeHelper.debug.xcconfig"; path = "Target Support Files/Pods-writeHelper/Pods-writeHelper.debug.xcconfig"; sourceTree = "<group>"; };
-		D35E28282612A94A006E6455 /* writeHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = writeHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D35E28282612A94A006E6455 /* 易书.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "易书.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D35E282B2612A94A006E6455 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D35E282C2612A94A006E6455 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		D35E28372612A94C006E6455 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		D35E283A2612A94C006E6455 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D35E283C2612A94C006E6455 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D35E283D2612A94C006E6455 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D38FFCCA26161420004DCA90 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D38FFCD0261617F7004DCA90 /* WHTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WHTabBarController.h; sourceTree = "<group>"; };
+		D38FFCD1261617F7004DCA90 /* WHTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WHTabBarController.m; sourceTree = "<group>"; };
+		D38FFCD6261623B2004DCA90 /* WHColorDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WHColorDefine.h; sourceTree = "<group>"; };
+		D38FFCD826162F16004DCA90 /* WHNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WHNavigationController.h; sourceTree = "<group>"; };
+		D38FFCD926162F16004DCA90 /* WHNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WHNavigationController.m; sourceTree = "<group>"; };
+		D38FFCE12616307F004DCA90 /* WHHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WHHomeViewController.h; sourceTree = "<group>"; };
+		D38FFCE22616307F004DCA90 /* WHHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WHHomeViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +69,7 @@
 		D35E281F2612A94A006E6455 = {
 			isa = PBXGroup;
 			children = (
+				D38FFCD52616235B004DCA90 /* Utility */,
 				D35E282A2612A94A006E6455 /* writeHelper */,
 				D35E28292612A94A006E6455 /* Products */,
 				D28AF65B9C35D6013382DC9B /* Pods */,
@@ -69,7 +80,7 @@
 		D35E28292612A94A006E6455 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D35E28282612A94A006E6455 /* writeHelper.app */,
+				D35E28282612A94A006E6455 /* 易书.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -77,22 +88,60 @@
 		D35E282A2612A94A006E6455 /* writeHelper */ = {
 			isa = PBXGroup;
 			children = (
+				D35E283D2612A94C006E6455 /* main.m */,
 				D35E282B2612A94A006E6455 /* AppDelegate.h */,
 				D35E282C2612A94A006E6455 /* AppDelegate.m */,
 				D35E28372612A94C006E6455 /* Assets.xcassets */,
-				D35E28392612A94C006E6455 /* LaunchScreen.storyboard */,
 				D35E283C2612A94C006E6455 /* Info.plist */,
-				D35E283D2612A94C006E6455 /* main.m */,
+				D38FFCCA26161420004DCA90 /* LaunchScreen.storyboard */,
+				D38FFCDE26163014004DCA90 /* WHHomeComponent */,
+				D38FFCCF26161774004DCA90 /* WHStructComponent */,
 			);
 			path = writeHelper;
+			sourceTree = "<group>";
+		};
+		D38FFCCF26161774004DCA90 /* WHStructComponent */ = {
+			isa = PBXGroup;
+			children = (
+				D38FFCD0261617F7004DCA90 /* WHTabBarController.h */,
+				D38FFCD1261617F7004DCA90 /* WHTabBarController.m */,
+				D38FFCD826162F16004DCA90 /* WHNavigationController.h */,
+				D38FFCD926162F16004DCA90 /* WHNavigationController.m */,
+			);
+			path = WHStructComponent;
+			sourceTree = "<group>";
+		};
+		D38FFCD52616235B004DCA90 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				D38FFCD6261623B2004DCA90 /* WHColorDefine.h */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		D38FFCDE26163014004DCA90 /* WHHomeComponent */ = {
+			isa = PBXGroup;
+			children = (
+				D38FFCE026163056004DCA90 /* ViewControllers */,
+			);
+			path = WHHomeComponent;
+			sourceTree = "<group>";
+		};
+		D38FFCE026163056004DCA90 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D38FFCE12616307F004DCA90 /* WHHomeViewController.h */,
+				D38FFCE22616307F004DCA90 /* WHHomeViewController.m */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D35E28272612A94A006E6455 /* writeHelper */ = {
+		D35E28272612A94A006E6455 /* 易书 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D35E28412612A94C006E6455 /* Build configuration list for PBXNativeTarget "writeHelper" */;
+			buildConfigurationList = D35E28412612A94C006E6455 /* Build configuration list for PBXNativeTarget "易书" */;
 			buildPhases = (
 				3D990D58BE57D014F2A0DB40 /* [CP] Check Pods Manifest.lock */,
 				D35E28242612A94A006E6455 /* Sources */,
@@ -104,9 +153,9 @@
 			);
 			dependencies = (
 			);
-			name = writeHelper;
+			name = "易书";
 			productName = writeHelper;
-			productReference = D35E28282612A94A006E6455 /* writeHelper.app */;
+			productReference = D35E28282612A94A006E6455 /* 易书.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -135,7 +184,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D35E28272612A94A006E6455 /* writeHelper */,
+				D35E28272612A94A006E6455 /* 易书 */,
 			);
 		};
 /* End PBXProject section */
@@ -145,8 +194,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D35E283B2612A94C006E6455 /* LaunchScreen.storyboard in Resources */,
 				D35E28382612A94C006E6455 /* Assets.xcassets in Resources */,
+				D38FFCCB26161420004DCA90 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -199,23 +248,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D38FFCD2261617F7004DCA90 /* WHTabBarController.m in Sources */,
 				D35E282D2612A94A006E6455 /* AppDelegate.m in Sources */,
+				D38FFCDA26162F16004DCA90 /* WHNavigationController.m in Sources */,
+				D38FFCE32616307F004DCA90 /* WHHomeViewController.m in Sources */,
 				D35E283E2612A94C006E6455 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		D35E28392612A94C006E6455 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D35E283A2612A94C006E6455 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		D35E283F2612A94C006E6455 /* Debug */ = {
@@ -335,7 +376,6 @@
 			baseConfigurationReference = AFF190D27F167E4B4124DABB /* Pods-writeHelper.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MZ295V9Y55;
 				INFOPLIST_FILE = writeHelper/Info.plist;
@@ -346,7 +386,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = chengmin.z.writeHelper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -355,7 +395,6 @@
 			baseConfigurationReference = 821358C87B861FC15CDDD7BD /* Pods-writeHelper.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MZ295V9Y55;
 				INFOPLIST_FILE = writeHelper/Info.plist;
@@ -366,7 +405,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = chengmin.z.writeHelper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -382,7 +421,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D35E28412612A94C006E6455 /* Build configuration list for PBXNativeTarget "writeHelper" */ = {
+		D35E28412612A94C006E6455 /* Build configuration list for PBXNativeTarget "易书" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D35E28422612A94C006E6455 /* Debug */,
