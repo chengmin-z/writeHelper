@@ -17,13 +17,15 @@
 
 @implementation WHTabBarController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
     [self configChildVC];
     [self configTabbar];
 }
 
-- (void)configChildVC {
+- (void)configChildVC
+{
     WHNavigationController *homeVC = [[WHNavigationController alloc]initWithRootViewController: [[WHHomeViewController alloc]init]];
     WHNavigationController *discoverVC = [[WHNavigationController alloc]init];
     WHNavigationController *reviewVC = [[WHNavigationController alloc]init];
@@ -32,7 +34,8 @@
     [self setViewControllers:[NSArray arrayWithObjects:homeVC, discoverVC, reviewVC, profileVC, nil]];
 }
 
-- (void)configTabbar {
+- (void)configTabbar
+{
     UITabBar *tabBar = self.tabBar;
     [tabBar setBackgroundColor:WH_WHITE_COLOR];
     [tabBar setTranslucent:NO];
@@ -66,8 +69,6 @@
                            forState:UIControlStateNormal];
         [obj setImageInsets:UIEdgeInsetsMake(4.0, 3.0, 4.0, 4.0)];
     }];
-    
-
 }
 
 #pragma mark - Lazy Load
