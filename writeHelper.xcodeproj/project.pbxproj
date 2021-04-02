@@ -15,6 +15,13 @@
 		D38FFCD2261617F7004DCA90 /* WHTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = D38FFCD1261617F7004DCA90 /* WHTabBarController.m */; };
 		D38FFCDA26162F16004DCA90 /* WHNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = D38FFCD926162F16004DCA90 /* WHNavigationController.m */; };
 		D38FFCE32616307F004DCA90 /* WHHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D38FFCE22616307F004DCA90 /* WHHomeViewController.m */; };
+		D38FFCEC2616C347004DCA90 /* WHMoreGuideSectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D38FFCEB2616C347004DCA90 /* WHMoreGuideSectionViewController.m */; };
+		D38FFCF22616C79C004DCA90 /* WHHomeViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D38FFCF12616C79C004DCA90 /* WHHomeViewModel.m */; };
+		D38FFCF62616C970004DCA90 /* WHMoreGuideViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D38FFCF52616C970004DCA90 /* WHMoreGuideViewModel.m */; };
+		D38FFCFE2616CE78004DCA90 /* WHMoreGuideCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D38FFCFD2616CE78004DCA90 /* WHMoreGuideCell.m */; };
+		D38FFD032616EDEB004DCA90 /* WHCVTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D38FFD022616EDEB004DCA90 /* WHCVTestViewController.m */; };
+		D38FFD0C261713C6004DCA90 /* WHSquarePreviewView.m in Sources */ = {isa = PBXBuildFile; fileRef = D38FFD0B261713C6004DCA90 /* WHSquarePreviewView.m */; };
+		D38FFD122617219E004DCA90 /* WHLongItemButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D38FFD112617219E004DCA90 /* WHLongItemButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +42,20 @@
 		D38FFCD926162F16004DCA90 /* WHNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WHNavigationController.m; sourceTree = "<group>"; };
 		D38FFCE12616307F004DCA90 /* WHHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WHHomeViewController.h; sourceTree = "<group>"; };
 		D38FFCE22616307F004DCA90 /* WHHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WHHomeViewController.m; sourceTree = "<group>"; };
+		D38FFCEA2616C347004DCA90 /* WHMoreGuideSectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WHMoreGuideSectionViewController.h; sourceTree = "<group>"; };
+		D38FFCEB2616C347004DCA90 /* WHMoreGuideSectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WHMoreGuideSectionViewController.m; sourceTree = "<group>"; };
+		D38FFCF02616C79C004DCA90 /* WHHomeViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WHHomeViewModel.h; sourceTree = "<group>"; };
+		D38FFCF12616C79C004DCA90 /* WHHomeViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WHHomeViewModel.m; sourceTree = "<group>"; };
+		D38FFCF42616C970004DCA90 /* WHMoreGuideViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WHMoreGuideViewModel.h; sourceTree = "<group>"; };
+		D38FFCF52616C970004DCA90 /* WHMoreGuideViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WHMoreGuideViewModel.m; sourceTree = "<group>"; };
+		D38FFCFC2616CE78004DCA90 /* WHMoreGuideCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WHMoreGuideCell.h; sourceTree = "<group>"; };
+		D38FFCFD2616CE78004DCA90 /* WHMoreGuideCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WHMoreGuideCell.m; sourceTree = "<group>"; };
+		D38FFD012616EDEB004DCA90 /* WHCVTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WHCVTestViewController.h; sourceTree = "<group>"; };
+		D38FFD022616EDEB004DCA90 /* WHCVTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WHCVTestViewController.m; sourceTree = "<group>"; };
+		D38FFD0A261713C6004DCA90 /* WHSquarePreviewView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WHSquarePreviewView.h; sourceTree = "<group>"; };
+		D38FFD0B261713C6004DCA90 /* WHSquarePreviewView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WHSquarePreviewView.m; sourceTree = "<group>"; };
+		D38FFD102617219E004DCA90 /* WHLongItemButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WHLongItemButton.h; sourceTree = "<group>"; };
+		D38FFD112617219E004DCA90 /* WHLongItemButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WHLongItemButton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +115,7 @@
 				D35E283C2612A94C006E6455 /* Info.plist */,
 				D38FFCCA26161420004DCA90 /* LaunchScreen.storyboard */,
 				D38FFCD52616235B004DCA90 /* WHUtility */,
+				D38FFD0E261718EB004DCA90 /* WHCustomView */,
 				D38FFCDE26163014004DCA90 /* WHHomeComponent */,
 				D38FFCCF26161774004DCA90 /* WHStructComponent */,
 			);
@@ -122,18 +144,63 @@
 		D38FFCDE26163014004DCA90 /* WHHomeComponent */ = {
 			isa = PBXGroup;
 			children = (
-				D38FFCE026163056004DCA90 /* ViewControllers */,
+				D38FFCFB2616CD96004DCA90 /* View */,
+				D38FFCEF2616C711004DCA90 /* ViewModel */,
+				D38FFCE92616C239004DCA90 /* SectionViewController */,
+				D38FFCE026163056004DCA90 /* ViewController */,
 			);
 			path = WHHomeComponent;
 			sourceTree = "<group>";
 		};
-		D38FFCE026163056004DCA90 /* ViewControllers */ = {
+		D38FFCE026163056004DCA90 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
 				D38FFCE12616307F004DCA90 /* WHHomeViewController.h */,
 				D38FFCE22616307F004DCA90 /* WHHomeViewController.m */,
+				D38FFD012616EDEB004DCA90 /* WHCVTestViewController.h */,
+				D38FFD022616EDEB004DCA90 /* WHCVTestViewController.m */,
 			);
-			path = ViewControllers;
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		D38FFCE92616C239004DCA90 /* SectionViewController */ = {
+			isa = PBXGroup;
+			children = (
+				D38FFCEA2616C347004DCA90 /* WHMoreGuideSectionViewController.h */,
+				D38FFCEB2616C347004DCA90 /* WHMoreGuideSectionViewController.m */,
+			);
+			path = SectionViewController;
+			sourceTree = "<group>";
+		};
+		D38FFCEF2616C711004DCA90 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D38FFCF02616C79C004DCA90 /* WHHomeViewModel.h */,
+				D38FFCF12616C79C004DCA90 /* WHHomeViewModel.m */,
+				D38FFCF42616C970004DCA90 /* WHMoreGuideViewModel.h */,
+				D38FFCF52616C970004DCA90 /* WHMoreGuideViewModel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D38FFCFB2616CD96004DCA90 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D38FFCFC2616CE78004DCA90 /* WHMoreGuideCell.h */,
+				D38FFCFD2616CE78004DCA90 /* WHMoreGuideCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D38FFD0E261718EB004DCA90 /* WHCustomView */ = {
+			isa = PBXGroup;
+			children = (
+				D38FFD0A261713C6004DCA90 /* WHSquarePreviewView.h */,
+				D38FFD0B261713C6004DCA90 /* WHSquarePreviewView.m */,
+				D38FFD102617219E004DCA90 /* WHLongItemButton.h */,
+				D38FFD112617219E004DCA90 /* WHLongItemButton.m */,
+			);
+			path = WHCustomView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,7 +244,6 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
-				Base,
 			);
 			mainGroup = D35E281F2612A94A006E6455;
 			productRefGroup = D35E28292612A94A006E6455 /* Products */;
@@ -248,11 +314,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D38FFD0C261713C6004DCA90 /* WHSquarePreviewView.m in Sources */,
 				D38FFCD2261617F7004DCA90 /* WHTabBarController.m in Sources */,
 				D35E282D2612A94A006E6455 /* AppDelegate.m in Sources */,
 				D38FFCDA26162F16004DCA90 /* WHNavigationController.m in Sources */,
 				D38FFCE32616307F004DCA90 /* WHHomeViewController.m in Sources */,
+				D38FFD032616EDEB004DCA90 /* WHCVTestViewController.m in Sources */,
 				D35E283E2612A94C006E6455 /* main.m in Sources */,
+				D38FFD122617219E004DCA90 /* WHLongItemButton.m in Sources */,
+				D38FFCFE2616CE78004DCA90 /* WHMoreGuideCell.m in Sources */,
+				D38FFCF62616C970004DCA90 /* WHMoreGuideViewModel.m in Sources */,
+				D38FFCF22616C79C004DCA90 /* WHHomeViewModel.m in Sources */,
+				D38FFCEC2616C347004DCA90 /* WHMoreGuideSectionViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

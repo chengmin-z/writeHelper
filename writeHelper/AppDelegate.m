@@ -16,7 +16,7 @@
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    [NSThread sleepForTimeInterval:0.5];
+    [NSThread sleepForTimeInterval:0.3];
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     self.window.rootViewController = [[WHTabBarController alloc]init];
     self.window.backgroundColor = [UIColor whiteColor];
