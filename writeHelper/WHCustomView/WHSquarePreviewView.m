@@ -13,13 +13,14 @@
 
 @interface WHSquarePreviewView()
 
+@property (nonatomic, strong) UIImageView *backImageView;
 @property (nonatomic, strong) UIImageView *imageView;
 
 @end
 
 @implementation WHSquarePreviewView
 
-- (instancetype)initWithPreviewImage:(UIImage *)image
+- (instancetype)initWithPreviewImage:(nullable UIImage *)image
 {
     if (self = [super init]) {
         [self configUI];
@@ -35,19 +36,29 @@
     self.layer.cornerRadius = 34;
     self.layer.borderColor = WH_MIAN_THEME_COLOR.CGColor;
     self.layer.borderWidth = 2;
+    [self.imageView setAlpha:0.8];
+    [self.backImageView setImage:[UIImage imageNamed:@"PreviewBackGround"]];
 }
 
 - (void)setupSubviews
 {
+    [self addSubview:self.backImageView];
     [self addSubview:self.imageView];
     [self layoutSubviews];
 }
 
 - (void)layoutSubviews
 {
-    [self.imageView mas_makeConstraints:^(MASConstraintMaker *make) {
+    [self.backImageView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.width.equalTo(self).offset(-42);
         make.height.equalTo(self).offset(-42);
+        make.centerX.equalTo(self);
+        make.centerY.equalTo(self);
+    }];
+    
+    [self.imageView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.width.equalTo(self.backImageView).offset(-10);
+        make.height.equalTo(self.backImageView).offset(-10);
         make.centerX.equalTo(self);
         make.centerY.equalTo(self);
     }];
@@ -67,6 +78,15 @@
         [_imageView setContentMode:UIViewContentModeScaleAspectFit];
     }
     return _imageView;
+}
+
+- (UIImageView *)backImageView
+{
+    if (!_backImageView) {
+        _backImageView = [[UIImageView alloc]init];
+        [_backImageView setContentMode:UIViewContentModeScaleAspectFit];
+    }
+    return _backImageView;
 }
 
 @end

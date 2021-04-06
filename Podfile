@@ -1,7 +1,7 @@
 platform :ios, '9.0'
 use_frameworks!
 
-target 'writeHelper' do
+target '易书' do
   pod 'ReactiveObjC' , '~> 3.1.1'
   pod 'SVProgressHUD' , '~> 2.2.5'
   pod 'MJRefresh' , '~> 3.5.0'
@@ -11,4 +11,5 @@ target 'writeHelper' do
   pod 'OpenCV' , '~> 4.1.0'
   pod 'Mantle' , '~> 2.1.6'
   pod 'AFNetworking' , '~> 4.0.1'
+  pod 'TZImagePickerController' , '~> 3.6.0'
 end
