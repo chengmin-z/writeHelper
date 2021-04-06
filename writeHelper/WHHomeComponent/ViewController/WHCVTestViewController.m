@@ -9,15 +9,21 @@
 
 #import <Masonry/Masonry.h>
 
+#import <ReactiveObjC/ReactiveObjC.h>
+#import <TZImagePickerController/TZImagePickerController.h>
+
 #import "WHColorDefine.h"
 #import "WHSquarePreviewView.h"
 #import "WHLongItemButton.h"
+#import "WHImageProcess.h"
 
 @interface WHCVTestViewController ()
 
 @property (nonatomic, strong) WHSquarePreviewView *previewView;
-@property (nonatomic, strong, readwrite) WHLongItemButton *selectButton;
-@property (nonatomic, strong, readwrite) WHLongItemButton *processButton;
+@property (nonatomic, strong) WHLongItemButton *selectButton;
+@property (nonatomic, strong) WHLongItemButton *processButton;
+@property (nonatomic, strong) TZImagePickerController *imagePickerVc;
+@property (nonatomic, strong) UIImage *selectedImage;
 
 @end
 
@@ -70,12 +76,16 @@
 
 - (void)actionForSelectButton
 {
-    
+    [self.navigationController presentViewController:self.imagePickerVc animated:YES completion:nil];
 }
 
 - (void)actionForProcessButton
 {
-    
+    if (!self.selectedImage) {
+        return;
+    }
+    self.selectedImage = [WHImageProcess imageToGrayImage:self.selectedImage];
+    [self.previewView setPreviewImage:self.selectedImage];
 }
 
 #pragma mark - Lazy Load
@@ -83,7 +93,7 @@
 - (WHSquarePreviewView *)previewView
 {
     if (!_previewView) {
-        _previewView = [[WHSquarePreviewView alloc]initWithPreviewImage:[UIImage imageNamed:@"PreviewBackGround"]];
+        _previewView = [[WHSquarePreviewView alloc]initWithPreviewImage:nil];
     }
     return _previewView;
 }
@@ -105,6 +115,50 @@
         [_processButton addTarget:self action:@selector(actionForProcessButton) forControlEvents:UIControlEventTouchUpInside];
     }
     return _processButton;
+}
+
+- (TZImagePickerController *)imagePickerVc
+{
+    if (!_imagePickerVc) {
+        _imagePickerVc = [[TZImagePickerController alloc] initWithMaxImagesCount:1 delegate:nil];
+        
+        _imagePickerVc.navigationBar.barTintColor = WH_MIAN_THEME_COLOR;
+        [_imagePickerVc.navigationBar setTitleTextAttributes:
+         @{NSFontAttributeName:[UIFont boldSystemFontOfSize:18],
+        NSForegroundColorAttributeName:WH_WHITE_COLOR}];
+        
+         _imagePickerVc.oKButtonTitleColorDisabled = [UIColor lightGrayColor];
+         _imagePickerVc.oKButtonTitleColorNormal = [UIColor greenColor];
+         _imagePickerVc.navigationBar.translucent = NO;
+        
+        _imagePickerVc.allowTakePicture = YES;
+        _imagePickerVc.allowPickingGif = NO;
+        _imagePickerVc.allowPickingVideo = NO;
+        _imagePickerVc.iconThemeColor = WH_MIAN_THEME_COLOR;
+        _imagePickerVc.oKButtonTitleColorNormal = WH_MIAN_THEME_COLOR;
+        
+        _imagePickerVc.allowCrop = YES;
+        NSInteger left = 10;
+        NSInteger widthHeight = self.view.bounds.size.width - 2 * left;
+        NSInteger top = (self.view.bounds.size.height - widthHeight) / 2;
+        _imagePickerVc.cropRect = CGRectMake(left, top, widthHeight, widthHeight);
+        _imagePickerVc.scaleAspectFillCrop = YES;
+        [_imagePickerVc setCropViewSettingBlock:^(UIView *cropView) {
+            cropView.layer.borderColor = WH_MIAN_THEME_COLOR.CGColor;
+            cropView.layer.borderWidth = 2.0;
+        }];
+        
+        @weakify(self);
+        [_imagePickerVc setDidFinishPickingPhotosHandle:^(NSArray<UIImage *> *photos, NSArray *assets, BOOL isSelectOriginalPhoto) {
+            @strongify(self);
+            if (photos.count != 1) {
+                return;
+            }
+            self.selectedImage = [photos objectAtIndex:0];
+            [self.previewView setPreviewImage:self.selectedImage];
+        }];
+    }
+    return _imagePickerVc;
 }
 
 @end

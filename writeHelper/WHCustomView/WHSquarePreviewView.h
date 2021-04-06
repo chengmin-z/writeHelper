@@ -11,7 +11,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface WHSquarePreviewView : UIView
 
-- (instancetype)initWithPreviewImage:(UIImage *)image;
+- (instancetype)initWithPreviewImage:(nullable UIImage *)image;
 
 - (instancetype)init NS_UNAVAILABLE;
 
