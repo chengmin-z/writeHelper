@@ -36,7 +36,6 @@
     self.layer.cornerRadius = 34;
     self.layer.borderColor = WH_MIAN_THEME_COLOR.CGColor;
     self.layer.borderWidth = 2;
-    [self.imageView setAlpha:0.8];
     [self.backImageView setImage:[UIImage imageNamed:@"PreviewBackGround"]];
 }
 
