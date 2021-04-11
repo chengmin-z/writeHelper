@@ -13,6 +13,12 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (UIImage *)imageToGrayImage:(UIImage *)image;
 
++ (UIImage *)reduceNoiseImage:(UIImage *)image;
+
++ (UIImage *)thresholdImage:(UIImage *)image;
+
++ (UIImage *)makeTransparent:(UIImage *)image;
+
 @end
 
 NS_ASSUME_NONNULL_END
