@@ -8,7 +8,14 @@
 #import "WHHomeViewController.h"
 
 #import "WHMoreGuideSectionViewController.h"
+#import "WHSearchSectionViewController.h"
+#import "WHDashBoardSectionViewController.h"
+
 #import "WHHomeViewModel.h"
+#import "WHMoreGuideViewModel.h"
+#import "WHSearchViewModel.h"
+#import "WHDashBoardVIewModel.h"
+
 #import "WHColorDefine.h"
 
 #import <Masonry/Masonry.h>
@@ -72,14 +79,20 @@
 
 - (IGListSectionController *)listAdapter:(IGListAdapter *)listAdapter sectionControllerForObject:(id)object
 {
-    return (IGListSectionController *)[[WHMoreGuideSectionViewController alloc]init];
+    if ([object isKindOfClass:WHMoreGuideViewModel.class]) {
+        return (IGListSectionController *)[[WHMoreGuideSectionViewController alloc]init];
+    } else if ([object isKindOfClass:WHSearchViewModel.class]) {
+        return (IGListSectionController *)[[WHSearchSectionViewController alloc]init];
+    } else if ([object isKindOfClass:WHDashBoardVIewModel.class]) {
+        return (IGListSectionController *)[[WHDashBoardSectionViewController alloc]init];
+    }
+    return (IGListSectionController *)[[WHDashBoardSectionViewController alloc]init];
 }
 
 - (UIView *)emptyViewForListAdapter:(IGListAdapter *)listAdapter
 {
     return nil;
 }
-
 
 
 #pragma mark - Lazy Load
@@ -90,7 +103,7 @@
         _collectionView =  [[UICollectionView alloc] initWithFrame:self.view.bounds
                                                      collectionViewLayout:[UICollectionViewFlowLayout new]];
         [_collectionView setBackgroundColor:[UIColor clearColor]];
-        [_collectionView setAlwaysBounceVertical:YES];
+        [_collectionView setAlwaysBounceVertical:NO];
     }
     return _collectionView;
 }

@@ -114,8 +114,8 @@
 - (UIButton *)processButton
 {
     if (!_processButton) {
-        _processButton = [[WHLongItemButton alloc]initWithTitle:@"CV 处理"];
-        [_processButton addTarget:self action:@selector(actionForProcessButton) forControlEvents:UIControlEventTouchUpInside];
+        _processButton = [[WHLongItemButton alloc]initWithTitle:@"获得评价"];
+        //[_processButton addTarget:self action:@selector(actionForProcessButton) forControlEvents:UIControlEventTouchUpInside];
     }
     return _processButton;
 }
@@ -158,7 +158,7 @@
                 return;
             }
             self.selectedImage = [photos objectAtIndex:0];
-            [self.previewView setPreviewImage:self.selectedImage];
+            [self actionForProcessButton];
         }];
     }
     return _imagePickerVc;

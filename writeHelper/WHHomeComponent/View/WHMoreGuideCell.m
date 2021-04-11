@@ -47,7 +47,6 @@
 
 - (void)layoutSubviews
 {
-    [self.infoButton setTitle:self.buttonTitle forState:UIControlStateNormal];
     [self.infoButton mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.bottom.equalTo(self.contentView);
         make.trailing.equalTo(self.contentView).offset(-21);
@@ -58,6 +57,7 @@
 - (void)setTitle:(NSString *)title
 {
     self.buttonTitle = [title copy];
+    [self.infoButton setTitle:self.buttonTitle forState:UIControlStateNormal];
 }
 
 - (void)setActionBlock:(void(^)(void))block

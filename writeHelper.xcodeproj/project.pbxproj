@@ -22,6 +22,12 @@
 		D38FFD0C261713C6004DCA90 /* WHSquarePreviewView.m in Sources */ = {isa = PBXBuildFile; fileRef = D38FFD0B261713C6004DCA90 /* WHSquarePreviewView.m */; };
 		D38FFD122617219E004DCA90 /* WHLongItemButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D38FFD112617219E004DCA90 /* WHLongItemButton.m */; };
 		D3C69C01261C6E50007AFA3E /* WHImageProcess.mm in Sources */ = {isa = PBXBuildFile; fileRef = D3C69C00261C6E50007AFA3E /* WHImageProcess.mm */; };
+		D3D180A926230503008BF57D /* WHSearchSectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3D180A826230503008BF57D /* WHSearchSectionViewController.m */; };
+		D3D180AD26230566008BF57D /* WHSearchViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D3D180AC26230566008BF57D /* WHSearchViewModel.m */; };
+		D3D180B12623073B008BF57D /* WHSearchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D3D180B02623073B008BF57D /* WHSearchCell.m */; };
+		D3D180B5262323E7008BF57D /* WHDashBoardVIewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D3D180B4262323E7008BF57D /* WHDashBoardVIewModel.m */; };
+		D3D180B9262325BC008BF57D /* WHDashBoardSectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3D180B8262325BC008BF57D /* WHDashBoardSectionViewController.m */; };
+		D3D180BD262325F7008BF57D /* WHDashBoardCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D3D180BC262325F7008BF57D /* WHDashBoardCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +64,18 @@
 		D3C69BF8261C6DB9007AFA3E /* WHColorDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHColorDefine.h; sourceTree = "<group>"; };
 		D3C69BFF261C6E50007AFA3E /* WHImageProcess.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WHImageProcess.h; sourceTree = "<group>"; };
 		D3C69C00261C6E50007AFA3E /* WHImageProcess.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = WHImageProcess.mm; sourceTree = "<group>"; };
+		D3D180A726230503008BF57D /* WHSearchSectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WHSearchSectionViewController.h; sourceTree = "<group>"; };
+		D3D180A826230503008BF57D /* WHSearchSectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WHSearchSectionViewController.m; sourceTree = "<group>"; };
+		D3D180AB26230566008BF57D /* WHSearchViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WHSearchViewModel.h; sourceTree = "<group>"; };
+		D3D180AC26230566008BF57D /* WHSearchViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WHSearchViewModel.m; sourceTree = "<group>"; };
+		D3D180AF2623073B008BF57D /* WHSearchCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WHSearchCell.h; sourceTree = "<group>"; };
+		D3D180B02623073B008BF57D /* WHSearchCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WHSearchCell.m; sourceTree = "<group>"; };
+		D3D180B3262323E7008BF57D /* WHDashBoardVIewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WHDashBoardVIewModel.h; sourceTree = "<group>"; };
+		D3D180B4262323E7008BF57D /* WHDashBoardVIewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WHDashBoardVIewModel.m; sourceTree = "<group>"; };
+		D3D180B7262325BC008BF57D /* WHDashBoardSectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WHDashBoardSectionViewController.h; sourceTree = "<group>"; };
+		D3D180B8262325BC008BF57D /* WHDashBoardSectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WHDashBoardSectionViewController.m; sourceTree = "<group>"; };
+		D3D180BB262325F7008BF57D /* WHDashBoardCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WHDashBoardCell.h; sourceTree = "<group>"; };
+		D3D180BC262325F7008BF57D /* WHDashBoardCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WHDashBoardCell.m; sourceTree = "<group>"; };
 		E80EAC15C3F911CBD53BC1E0 /* Pods___.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods___.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F802D401D9C65DFE4A0F1018 /* Pods-易书.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-易书.debug.xcconfig"; path = "Target Support Files/Pods-易书/Pods-易书.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -175,6 +193,10 @@
 			children = (
 				D38FFCEA2616C347004DCA90 /* WHMoreGuideSectionViewController.h */,
 				D38FFCEB2616C347004DCA90 /* WHMoreGuideSectionViewController.m */,
+				D3D180A726230503008BF57D /* WHSearchSectionViewController.h */,
+				D3D180A826230503008BF57D /* WHSearchSectionViewController.m */,
+				D3D180B7262325BC008BF57D /* WHDashBoardSectionViewController.h */,
+				D3D180B8262325BC008BF57D /* WHDashBoardSectionViewController.m */,
 			);
 			path = SectionViewController;
 			sourceTree = "<group>";
@@ -186,6 +208,10 @@
 				D38FFCF12616C79C004DCA90 /* WHHomeViewModel.m */,
 				D38FFCF42616C970004DCA90 /* WHMoreGuideViewModel.h */,
 				D38FFCF52616C970004DCA90 /* WHMoreGuideViewModel.m */,
+				D3D180AB26230566008BF57D /* WHSearchViewModel.h */,
+				D3D180AC26230566008BF57D /* WHSearchViewModel.m */,
+				D3D180B3262323E7008BF57D /* WHDashBoardVIewModel.h */,
+				D3D180B4262323E7008BF57D /* WHDashBoardVIewModel.m */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -195,6 +221,10 @@
 			children = (
 				D38FFCFC2616CE78004DCA90 /* WHMoreGuideCell.h */,
 				D38FFCFD2616CE78004DCA90 /* WHMoreGuideCell.m */,
+				D3D180AF2623073B008BF57D /* WHSearchCell.h */,
+				D3D180B02623073B008BF57D /* WHSearchCell.m */,
+				D3D180BB262325F7008BF57D /* WHDashBoardCell.h */,
+				D3D180BC262325F7008BF57D /* WHDashBoardCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -330,10 +360,16 @@
 				D38FFD032616EDEB004DCA90 /* WHCVTestViewController.m in Sources */,
 				D35E283E2612A94C006E6455 /* main.m in Sources */,
 				D38FFD122617219E004DCA90 /* WHLongItemButton.m in Sources */,
+				D3D180AD26230566008BF57D /* WHSearchViewModel.m in Sources */,
+				D3D180BD262325F7008BF57D /* WHDashBoardCell.m in Sources */,
 				D38FFCFE2616CE78004DCA90 /* WHMoreGuideCell.m in Sources */,
 				D38FFCF62616C970004DCA90 /* WHMoreGuideViewModel.m in Sources */,
+				D3D180B9262325BC008BF57D /* WHDashBoardSectionViewController.m in Sources */,
 				D38FFCF22616C79C004DCA90 /* WHHomeViewModel.m in Sources */,
 				D38FFCEC2616C347004DCA90 /* WHMoreGuideSectionViewController.m in Sources */,
+				D3D180B5262323E7008BF57D /* WHDashBoardVIewModel.m in Sources */,
+				D3D180B12623073B008BF57D /* WHSearchCell.m in Sources */,
+				D3D180A926230503008BF57D /* WHSearchSectionViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -458,14 +494,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = MDLV4Q2Q84;
+				DEVELOPMENT_TEAM = MZ295V9Y55;
 				INFOPLIST_FILE = writeHelper/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = chengmin.z.writeHelper1;
+				PRODUCT_BUNDLE_IDENTIFIER = chengmin.z.writeHelper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -477,14 +513,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = MDLV4Q2Q84;
+				DEVELOPMENT_TEAM = MZ295V9Y55;
 				INFOPLIST_FILE = writeHelper/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = chengmin.z.writeHelper1;
+				PRODUCT_BUNDLE_IDENTIFIER = chengmin.z.writeHelper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
