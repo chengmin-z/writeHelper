@@ -42,6 +42,11 @@
         cellClass = [WHDashBoardCell class];
     }
     WHDashBoardCell *cell = [self.collectionContext dequeueReusableCellOfClass:cellClass forSectionController:self atIndex:index];
+    
+    [cell setTodayStudyMin:self.viewModel.todayStudyMin];
+    [cell setToNextLevel:self.viewModel.toNextLevel];
+    [cell setMyLevel:self.viewModel.myLevel];
+   
     return cell;
 }
 

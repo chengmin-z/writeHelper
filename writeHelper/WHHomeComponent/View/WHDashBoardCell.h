@@ -11,6 +11,12 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface WHDashBoardCell : UICollectionViewCell
 
+- (void)setTodayStudyMin:(NSInteger)min;
+
+- (void)setToNextLevel:(NSInteger)nums;
+
+- (void)setMyLevel:(NSString *)level;
+
 @end
 
 NS_ASSUME_NONNULL_END
