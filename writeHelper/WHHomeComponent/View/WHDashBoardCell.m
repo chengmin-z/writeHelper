@@ -112,49 +112,6 @@
     [self.myLevelLabel setAttributedText:attrString];
 }
 
-#pragma -mark - Utility
-
-- (NSAttributedString *)__generateCustomStringWithTitle: (NSString *)title content:(NSString *)content unit:(nullable NSString *)unit
-{
-    NSMutableAttributedString * titleAttribute = [[NSMutableAttributedString alloc] initWithString:[NSString stringWithFormat:@"%@\n", title]];
-    [titleAttribute addAttribute:NSForegroundColorAttributeName
-                           value:WH_LIGHT_GRAY_COLOR
-                           range:NSMakeRange(0, titleAttribute.string.length)];
-    [titleAttribute addAttribute:NSFontAttributeName
-                           value:[UIFont boldSystemFontOfSize:15]
-                           range:NSMakeRange(0, titleAttribute.string.length)];
-    
-    NSMutableAttributedString * numAttribute = [[NSMutableAttributedString alloc] initWithString:content];
-    [numAttribute addAttribute:NSForegroundColorAttributeName
-                          value:WH_BLACK_COLOR
-                          range:NSMakeRange(0, numAttribute.string.length)];
-    [numAttribute addAttribute:NSFontAttributeName
-                          value:[UIFont boldSystemFontOfSize:26]
-                          range:NSMakeRange(0, numAttribute.string.length)];
-    
-    NSMutableAttributedString *totalAttrString = [[NSMutableAttributedString alloc]init];
-    
-    [totalAttrString appendAttributedString:titleAttribute];
-    [totalAttrString appendAttributedString:numAttribute];
-    if (unit) {
-        NSMutableAttributedString * mainAttribute = [[NSMutableAttributedString alloc] initWithString:[NSString stringWithFormat:@" %@", unit]];
-        [mainAttribute addAttribute:NSForegroundColorAttributeName
-                              value:WH_BLACK_COLOR
-                              range:NSMakeRange(0, mainAttribute.string.length)];
-        [mainAttribute addAttribute:NSFontAttributeName
-                              value:[UIFont boldSystemFontOfSize:19]
-                              range:NSMakeRange(0, mainAttribute.string.length)];
-        [totalAttrString appendAttributedString:mainAttribute];
-    }
-    
-    NSMutableParagraphStyle * paragraphStyle = [[NSMutableParagraphStyle alloc] init];
-    paragraphStyle.paragraphSpacing = 10.0;
-    [paragraphStyle setAlignment:NSTextAlignmentCenter];
-    [totalAttrString addAttribute:NSParagraphStyleAttributeName
-                            value:paragraphStyle
-                            range:NSMakeRange(0, totalAttrString.string.length)];
-    return totalAttrString;
-}
 
 #pragma mark - Lazy Load
 
@@ -214,6 +171,51 @@
         [_myLevelLabel setAttributedText:attrString];
     }
     return _myLevelLabel;
+}
+
+
+#pragma -mark - Utility
+
+- (NSAttributedString *)__generateCustomStringWithTitle: (NSString *)title content:(NSString *)content unit:(nullable NSString *)unit
+{
+    NSMutableAttributedString * titleAttribute = [[NSMutableAttributedString alloc] initWithString:[NSString stringWithFormat:@"%@\n", title]];
+    [titleAttribute addAttribute:NSForegroundColorAttributeName
+                           value:WH_LIGHT_GRAY_COLOR
+                           range:NSMakeRange(0, titleAttribute.string.length)];
+    [titleAttribute addAttribute:NSFontAttributeName
+                           value:[UIFont boldSystemFontOfSize:15]
+                           range:NSMakeRange(0, titleAttribute.string.length)];
+    
+    NSMutableAttributedString * numAttribute = [[NSMutableAttributedString alloc] initWithString:content];
+    [numAttribute addAttribute:NSForegroundColorAttributeName
+                          value:WH_BLACK_COLOR
+                          range:NSMakeRange(0, numAttribute.string.length)];
+    [numAttribute addAttribute:NSFontAttributeName
+                          value:[UIFont boldSystemFontOfSize:26]
+                          range:NSMakeRange(0, numAttribute.string.length)];
+    
+    NSMutableAttributedString *totalAttrString = [[NSMutableAttributedString alloc]init];
+    
+    [totalAttrString appendAttributedString:titleAttribute];
+    [totalAttrString appendAttributedString:numAttribute];
+    if (unit) {
+        NSMutableAttributedString * mainAttribute = [[NSMutableAttributedString alloc] initWithString:[NSString stringWithFormat:@" %@", unit]];
+        [mainAttribute addAttribute:NSForegroundColorAttributeName
+                              value:WH_BLACK_COLOR
+                              range:NSMakeRange(0, mainAttribute.string.length)];
+        [mainAttribute addAttribute:NSFontAttributeName
+                              value:[UIFont boldSystemFontOfSize:19]
+                              range:NSMakeRange(0, mainAttribute.string.length)];
+        [totalAttrString appendAttributedString:mainAttribute];
+    }
+    
+    NSMutableParagraphStyle * paragraphStyle = [[NSMutableParagraphStyle alloc] init];
+    paragraphStyle.paragraphSpacing = 10.0;
+    [paragraphStyle setAlignment:NSTextAlignmentCenter];
+    [totalAttrString addAttribute:NSParagraphStyleAttributeName
+                            value:paragraphStyle
+                            range:NSMakeRange(0, totalAttrString.string.length)];
+    return totalAttrString;
 }
 
 @end

@@ -28,6 +28,19 @@
 		D3D180B5262323E7008BF57D /* WHDashBoardVIewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D3D180B4262323E7008BF57D /* WHDashBoardVIewModel.m */; };
 		D3D180B9262325BC008BF57D /* WHDashBoardSectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3D180B8262325BC008BF57D /* WHDashBoardSectionViewController.m */; };
 		D3D180BD262325F7008BF57D /* WHDashBoardCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D3D180BC262325F7008BF57D /* WHDashBoardCell.m */; };
+		D3D8613C26266B5B00B00CF9 /* WHRecommendBar.m in Sources */ = {isa = PBXBuildFile; fileRef = D3D8613B26266B5B00B00CF9 /* WHRecommendBar.m */; };
+		D3D861402626704C00B00CF9 /* WHRecommendViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D3D8613F2626704C00B00CF9 /* WHRecommendViewModel.m */; };
+		D3D86144262671A900B00CF9 /* WHRecommendSectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3D86143262671A900B00CF9 /* WHRecommendSectionViewController.m */; };
+		D3D861482626725100B00CF9 /* WHRecommendCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D3D861472626725100B00CF9 /* WHRecommendCell.m */; };
+		D3D8614C2626791200B00CF9 /* WHBasicButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D3D8614B2626791200B00CF9 /* WHBasicButton.m */; };
+		D3D8615026271B4700B00CF9 /* WHCourseSectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3D8614F26271B4700B00CF9 /* WHCourseSectionViewController.m */; };
+		D3D8615426271C7500B00CF9 /* WHCoursesViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D3D8615326271C7500B00CF9 /* WHCoursesViewModel.m */; };
+		D3D8615926271D0400B00CF9 /* WHCourseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D3D8615826271D0400B00CF9 /* WHCourseModel.m */; };
+		D3D8615E262722E000B00CF9 /* WHCoursesCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D3D8615D262722E000B00CF9 /* WHCoursesCell.m */; };
+		D3D861DD2627250000B00CF9 /* XLCardCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D3D861D52627250000B00CF9 /* XLCardCell.m */; };
+		D3D861DE2627250000B00CF9 /* XLCardSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = D3D861D72627250000B00CF9 /* XLCardSwitch.m */; };
+		D3D861DF2627250000B00CF9 /* XLCardModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D3D861DB2627250000B00CF9 /* XLCardModel.m */; };
+		D3D861E02627250000B00CF9 /* XLCardSwitchFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = D3D861DC2627250000B00CF9 /* XLCardSwitchFlowLayout.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -76,6 +89,32 @@
 		D3D180B8262325BC008BF57D /* WHDashBoardSectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WHDashBoardSectionViewController.m; sourceTree = "<group>"; };
 		D3D180BB262325F7008BF57D /* WHDashBoardCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WHDashBoardCell.h; sourceTree = "<group>"; };
 		D3D180BC262325F7008BF57D /* WHDashBoardCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WHDashBoardCell.m; sourceTree = "<group>"; };
+		D3D8613A26266B5B00B00CF9 /* WHRecommendBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WHRecommendBar.h; sourceTree = "<group>"; };
+		D3D8613B26266B5B00B00CF9 /* WHRecommendBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WHRecommendBar.m; sourceTree = "<group>"; };
+		D3D8613E2626704C00B00CF9 /* WHRecommendViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WHRecommendViewModel.h; sourceTree = "<group>"; };
+		D3D8613F2626704C00B00CF9 /* WHRecommendViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WHRecommendViewModel.m; sourceTree = "<group>"; };
+		D3D86142262671A900B00CF9 /* WHRecommendSectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WHRecommendSectionViewController.h; sourceTree = "<group>"; };
+		D3D86143262671A900B00CF9 /* WHRecommendSectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WHRecommendSectionViewController.m; sourceTree = "<group>"; };
+		D3D861462626725100B00CF9 /* WHRecommendCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WHRecommendCell.h; sourceTree = "<group>"; };
+		D3D861472626725100B00CF9 /* WHRecommendCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WHRecommendCell.m; sourceTree = "<group>"; };
+		D3D8614A2626791200B00CF9 /* WHBasicButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WHBasicButton.h; sourceTree = "<group>"; };
+		D3D8614B2626791200B00CF9 /* WHBasicButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WHBasicButton.m; sourceTree = "<group>"; };
+		D3D8614E26271B4700B00CF9 /* WHCourseSectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WHCourseSectionViewController.h; sourceTree = "<group>"; };
+		D3D8614F26271B4700B00CF9 /* WHCourseSectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WHCourseSectionViewController.m; sourceTree = "<group>"; };
+		D3D8615226271C7500B00CF9 /* WHCoursesViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WHCoursesViewModel.h; sourceTree = "<group>"; };
+		D3D8615326271C7500B00CF9 /* WHCoursesViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WHCoursesViewModel.m; sourceTree = "<group>"; };
+		D3D8615726271D0400B00CF9 /* WHCourseModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WHCourseModel.h; sourceTree = "<group>"; };
+		D3D8615826271D0400B00CF9 /* WHCourseModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WHCourseModel.m; sourceTree = "<group>"; };
+		D3D8615C262722E000B00CF9 /* WHCoursesCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WHCoursesCell.h; sourceTree = "<group>"; };
+		D3D8615D262722E000B00CF9 /* WHCoursesCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WHCoursesCell.m; sourceTree = "<group>"; };
+		D3D861D52627250000B00CF9 /* XLCardCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLCardCell.m; sourceTree = "<group>"; };
+		D3D861D62627250000B00CF9 /* XLCardModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLCardModel.h; sourceTree = "<group>"; };
+		D3D861D72627250000B00CF9 /* XLCardSwitch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLCardSwitch.m; sourceTree = "<group>"; };
+		D3D861D82627250000B00CF9 /* XLCardSwitchFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLCardSwitchFlowLayout.h; sourceTree = "<group>"; };
+		D3D861D92627250000B00CF9 /* XLCardCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLCardCell.h; sourceTree = "<group>"; };
+		D3D861DA2627250000B00CF9 /* XLCardSwitch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLCardSwitch.h; sourceTree = "<group>"; };
+		D3D861DB2627250000B00CF9 /* XLCardModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLCardModel.m; sourceTree = "<group>"; };
+		D3D861DC2627250000B00CF9 /* XLCardSwitchFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLCardSwitchFlowLayout.m; sourceTree = "<group>"; };
 		E80EAC15C3F911CBD53BC1E0 /* Pods___.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods___.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F802D401D9C65DFE4A0F1018 /* Pods-易书.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-易书.debug.xcconfig"; path = "Target Support Files/Pods-易书/Pods-易书.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -114,7 +153,6 @@
 			isa = PBXGroup;
 			children = (
 				D35E282A2612A94A006E6455 /* writeHelper */,
-				D35E28292612A94A006E6455 /* Products */,
 				D28AF65B9C35D6013382DC9B /* Pods */,
 				569CD4D555F1A55B405C4B34 /* Frameworks */,
 			);
@@ -126,6 +164,7 @@
 				D35E28282612A94A006E6455 /* 易书.app */,
 			);
 			name = Products;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		D35E282A2612A94A006E6455 /* writeHelper */ = {
@@ -137,10 +176,12 @@
 				D35E28372612A94C006E6455 /* Assets.xcassets */,
 				D35E283C2612A94C006E6455 /* Info.plist */,
 				D38FFCCA26161420004DCA90 /* LaunchScreen.storyboard */,
+				D3D861D42627250000B00CF9 /* XLCardSwitch */,
 				D38FFCD52616235B004DCA90 /* WHUtility */,
 				D38FFD0E261718EB004DCA90 /* WHCustomView */,
 				D38FFCDE26163014004DCA90 /* WHHomeComponent */,
 				D38FFCCF26161774004DCA90 /* WHStructComponent */,
+				D35E28292612A94A006E6455 /* Products */,
 			);
 			path = writeHelper;
 			sourceTree = "<group>";
@@ -169,6 +210,7 @@
 		D38FFCDE26163014004DCA90 /* WHHomeComponent */ = {
 			isa = PBXGroup;
 			children = (
+				D3D8615626271CE100B00CF9 /* Model */,
 				D38FFCFB2616CD96004DCA90 /* View */,
 				D38FFCEF2616C711004DCA90 /* ViewModel */,
 				D38FFCE92616C239004DCA90 /* SectionViewController */,
@@ -197,6 +239,10 @@
 				D3D180A826230503008BF57D /* WHSearchSectionViewController.m */,
 				D3D180B7262325BC008BF57D /* WHDashBoardSectionViewController.h */,
 				D3D180B8262325BC008BF57D /* WHDashBoardSectionViewController.m */,
+				D3D86142262671A900B00CF9 /* WHRecommendSectionViewController.h */,
+				D3D86143262671A900B00CF9 /* WHRecommendSectionViewController.m */,
+				D3D8614E26271B4700B00CF9 /* WHCourseSectionViewController.h */,
+				D3D8614F26271B4700B00CF9 /* WHCourseSectionViewController.m */,
 			);
 			path = SectionViewController;
 			sourceTree = "<group>";
@@ -212,6 +258,10 @@
 				D3D180AC26230566008BF57D /* WHSearchViewModel.m */,
 				D3D180B3262323E7008BF57D /* WHDashBoardVIewModel.h */,
 				D3D180B4262323E7008BF57D /* WHDashBoardVIewModel.m */,
+				D3D8613E2626704C00B00CF9 /* WHRecommendViewModel.h */,
+				D3D8613F2626704C00B00CF9 /* WHRecommendViewModel.m */,
+				D3D8615226271C7500B00CF9 /* WHCoursesViewModel.h */,
+				D3D8615326271C7500B00CF9 /* WHCoursesViewModel.m */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -225,6 +275,10 @@
 				D3D180B02623073B008BF57D /* WHSearchCell.m */,
 				D3D180BB262325F7008BF57D /* WHDashBoardCell.h */,
 				D3D180BC262325F7008BF57D /* WHDashBoardCell.m */,
+				D3D861462626725100B00CF9 /* WHRecommendCell.h */,
+				D3D861472626725100B00CF9 /* WHRecommendCell.m */,
+				D3D8615C262722E000B00CF9 /* WHCoursesCell.h */,
+				D3D8615D262722E000B00CF9 /* WHCoursesCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -236,9 +290,38 @@
 				D38FFD0B261713C6004DCA90 /* WHSquarePreviewView.m */,
 				D38FFD102617219E004DCA90 /* WHLongItemButton.h */,
 				D38FFD112617219E004DCA90 /* WHLongItemButton.m */,
+				D3D8613A26266B5B00B00CF9 /* WHRecommendBar.h */,
+				D3D8613B26266B5B00B00CF9 /* WHRecommendBar.m */,
+				D3D8614A2626791200B00CF9 /* WHBasicButton.h */,
+				D3D8614B2626791200B00CF9 /* WHBasicButton.m */,
 			);
 			path = WHCustomView;
 			sourceTree = "<group>";
+		};
+		D3D8615626271CE100B00CF9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D3D8615726271D0400B00CF9 /* WHCourseModel.h */,
+				D3D8615826271D0400B00CF9 /* WHCourseModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D3D861D42627250000B00CF9 /* XLCardSwitch */ = {
+			isa = PBXGroup;
+			children = (
+				D3D861D52627250000B00CF9 /* XLCardCell.m */,
+				D3D861D62627250000B00CF9 /* XLCardModel.h */,
+				D3D861D72627250000B00CF9 /* XLCardSwitch.m */,
+				D3D861D82627250000B00CF9 /* XLCardSwitchFlowLayout.h */,
+				D3D861D92627250000B00CF9 /* XLCardCell.h */,
+				D3D861DA2627250000B00CF9 /* XLCardSwitch.h */,
+				D3D861DB2627250000B00CF9 /* XLCardModel.m */,
+				D3D861DC2627250000B00CF9 /* XLCardSwitchFlowLayout.m */,
+			);
+			name = XLCardSwitch;
+			path = writeHelper/XLCardSwitch;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -353,23 +436,36 @@
 			files = (
 				D38FFD0C261713C6004DCA90 /* WHSquarePreviewView.m in Sources */,
 				D38FFCD2261617F7004DCA90 /* WHTabBarController.m in Sources */,
+				D3D861402626704C00B00CF9 /* WHRecommendViewModel.m in Sources */,
+				D3D8615026271B4700B00CF9 /* WHCourseSectionViewController.m in Sources */,
 				D35E282D2612A94A006E6455 /* AppDelegate.m in Sources */,
 				D3C69C01261C6E50007AFA3E /* WHImageProcess.mm in Sources */,
 				D38FFCDA26162F16004DCA90 /* WHNavigationController.m in Sources */,
+				D3D8613C26266B5B00B00CF9 /* WHRecommendBar.m in Sources */,
+				D3D8614C2626791200B00CF9 /* WHBasicButton.m in Sources */,
+				D3D861DF2627250000B00CF9 /* XLCardModel.m in Sources */,
 				D38FFCE32616307F004DCA90 /* WHHomeViewController.m in Sources */,
 				D38FFD032616EDEB004DCA90 /* WHCVTestViewController.m in Sources */,
+				D3D861DE2627250000B00CF9 /* XLCardSwitch.m in Sources */,
 				D35E283E2612A94C006E6455 /* main.m in Sources */,
 				D38FFD122617219E004DCA90 /* WHLongItemButton.m in Sources */,
+				D3D8615E262722E000B00CF9 /* WHCoursesCell.m in Sources */,
 				D3D180AD26230566008BF57D /* WHSearchViewModel.m in Sources */,
+				D3D861482626725100B00CF9 /* WHRecommendCell.m in Sources */,
 				D3D180BD262325F7008BF57D /* WHDashBoardCell.m in Sources */,
 				D38FFCFE2616CE78004DCA90 /* WHMoreGuideCell.m in Sources */,
+				D3D8615926271D0400B00CF9 /* WHCourseModel.m in Sources */,
+				D3D86144262671A900B00CF9 /* WHRecommendSectionViewController.m in Sources */,
 				D38FFCF62616C970004DCA90 /* WHMoreGuideViewModel.m in Sources */,
 				D3D180B9262325BC008BF57D /* WHDashBoardSectionViewController.m in Sources */,
 				D38FFCF22616C79C004DCA90 /* WHHomeViewModel.m in Sources */,
+				D3D861E02627250000B00CF9 /* XLCardSwitchFlowLayout.m in Sources */,
 				D38FFCEC2616C347004DCA90 /* WHMoreGuideSectionViewController.m in Sources */,
+				D3D8615426271C7500B00CF9 /* WHCoursesViewModel.m in Sources */,
 				D3D180B5262323E7008BF57D /* WHDashBoardVIewModel.m in Sources */,
 				D3D180B12623073B008BF57D /* WHSearchCell.m in Sources */,
 				D3D180A926230503008BF57D /* WHSearchSectionViewController.m in Sources */,
+				D3D861DD2627250000B00CF9 /* XLCardCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

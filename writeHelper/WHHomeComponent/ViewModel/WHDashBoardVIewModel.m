@@ -24,9 +24,9 @@
 - (instancetype)initWithTodayMin:(NSInteger)todayMin toNextLevel:(NSInteger)toNextLevel myLevel:(NSString *)level
 {
     if (self = [super init]) {
-        _myLevel = [level copy];
-        _toNextLevel = toNextLevel;
-        _todayStudyMin = todayMin;
+        self.myLevel = [level copy];
+        self.toNextLevel = toNextLevel;
+        self.todayStudyMin = todayMin;
     }
     return self;
 }

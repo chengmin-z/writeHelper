@@ -10,11 +10,15 @@
 #import "WHMoreGuideSectionViewController.h"
 #import "WHSearchSectionViewController.h"
 #import "WHDashBoardSectionViewController.h"
+#import "WHRecommendSectionViewController.h"
+#import "WHCourseSectionViewController.h"
 
 #import "WHHomeViewModel.h"
 #import "WHMoreGuideViewModel.h"
 #import "WHSearchViewModel.h"
 #import "WHDashBoardVIewModel.h"
+#import "WHRecommendViewModel.h"
+#import "WHCoursesViewModel.h"
 
 #import "WHColorDefine.h"
 
@@ -62,12 +66,6 @@
 {
     [self.view addSubview:self.headView];
     [self.view addSubview:self.collectionView];
-    [self layoutSubviews];
-}
-
-- (void)layoutSubviews
-{
-    
 }
 
 #pragma mark - IGListAdapterDataSource
@@ -85,6 +83,10 @@
         return (IGListSectionController *)[[WHSearchSectionViewController alloc]init];
     } else if ([object isKindOfClass:WHDashBoardVIewModel.class]) {
         return (IGListSectionController *)[[WHDashBoardSectionViewController alloc]init];
+    } else if ([object isKindOfClass:WHRecommendViewModel.class]) {
+        return (IGListSectionController *)[[WHRecommendSectionViewController alloc]init];
+    } else if ([object isKindOfClass:WHCoursesViewModel.class]) {
+        return (IGListSectionController *)[[WHCourseSectionViewController alloc]init];
     }
     return (IGListSectionController *)[[WHDashBoardSectionViewController alloc]init];
 }
@@ -103,7 +105,7 @@
         _collectionView =  [[UICollectionView alloc] initWithFrame:self.view.bounds
                                                      collectionViewLayout:[UICollectionViewFlowLayout new]];
         [_collectionView setBackgroundColor:[UIColor clearColor]];
-        [_collectionView setAlwaysBounceVertical:NO];
+        [_collectionView setAlwaysBounceVertical:YES];
     }
     return _collectionView;
 }
