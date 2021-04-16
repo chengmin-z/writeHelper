@@ -23,7 +23,7 @@
 {
     self = [super init];
     if (self) {
-        self.inset = UIEdgeInsetsMake(15.0, 0, 10.0, 0);
+        self.inset = UIEdgeInsetsMake(15.0, 0, 20.0, 0);
     }
     return self;
 }

@@ -23,7 +23,7 @@
 {
     self = [super init];
     if (self) {
-        self.inset = UIEdgeInsetsMake(50.0, 0, 10.0, 0);
+        self.inset = UIEdgeInsetsMake(0, 0, 20, 0);
     }
     return self;
 }
@@ -40,7 +40,7 @@
     Class cellClass;
     if (index == 0) {
         cellClass = [WHMoreGuideCell class];
-    }
+    } 
     WHMoreGuideCell *cell = [self.collectionContext dequeueReusableCellOfClass:cellClass forSectionController:self atIndex:index];
     [cell setTitle:self.viewModel.title];
     [cell setActionBlock:^{

@@ -23,7 +23,7 @@
 {
     self = [super init];
     if (self) {
-        self.inset = UIEdgeInsetsMake(15.0, 0, 10.0, 0);
+        self.inset = UIEdgeInsetsMake(0, 0, 10, 0);
     }
     return self;
 }
@@ -42,13 +42,18 @@
         cellClass = [WHDashBoardCell class];
     }
     WHDashBoardCell *cell = [self.collectionContext dequeueReusableCellOfClass:cellClass forSectionController:self atIndex:index];
+    
+    [cell setTodayStudyMin:self.viewModel.todayStudyMin];
+    [cell setToNextLevel:self.viewModel.toNextLevel];
+    [cell setMyLevel:self.viewModel.myLevel];
+   
     return cell;
 }
 
 - (CGSize)sizeForItemAtIndex:(NSInteger)index
 {
     const CGFloat width = self.collectionContext.containerSize.width;
-    return CGSizeMake(width, 180.0);
+    return CGSizeMake(width, 155.0);
 }
 
 - (void)didUpdateToObject:(id)object

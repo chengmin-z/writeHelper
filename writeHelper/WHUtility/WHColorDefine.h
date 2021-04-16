@@ -19,6 +19,7 @@
 #define WH_LIGHT_PURPLE_COLOR WHUIColorFromHEX(0x96A5E5)
 #define WH_HEAD_PURPLE_COLOR WHUIColorFromHEX(0x758DF0)
 #define WH_BLACK_COLOR WHUIColorFromHEX(0x3B3B3B)
+#define WH_LIGHT_GRAY_COLOR WHUIColorFromHEX(0x797979)
 
 
 #endif /* WHColorDefine_h */
