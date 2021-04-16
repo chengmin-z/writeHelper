@@ -9,8 +9,8 @@
 #import "XLCardSwitchFlowLayout.h"
 
 //居中卡片宽度与据屏幕宽度比例
-static float CardWidthScale = 0.7f;
-static float CardHeightScale = 0.8f;
+static float CardWidthScale = 1.0;
+static float CardHeightScale = 1.0f;
 
 @implementation XLCardSwitchFlowLayout
 
@@ -55,7 +55,7 @@ static float CardHeightScale = 0.8f;
 #pragma mark 配置方法
 //卡片宽度
 - (CGFloat)itemWidth {
-    return self.collectionView.bounds.size.width * CardWidthScale;
+    return self.collectionView.bounds.size.height * CardWidthScale;
 }
 
 - (CGFloat)itemHeight {

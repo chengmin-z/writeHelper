@@ -39,11 +39,26 @@
         
         WHCourseModel *model1 = [[WHCourseModel alloc]init];
         model1.bgImgUrl = @"https://tva1.sinaimg.cn/large/008eGmZEly1gpjkqd6kq2j30ew0ewtbg.jpg";
+        model1.courseTitle = @"课程一名称";
         model1.text = @"构";
+        
         WHCourseModel *model2 = [[WHCourseModel alloc]init];
         model2.bgImgUrl = @"https://tva1.sinaimg.cn/large/008eGmZEly1gpjkqfp8lnj30ew0ewgqd.jpg";
+        model2.courseTitle = @"课程二名称";
         model2.text = @"汉";
-        NSArray<WHCourseModel *> *models = [NSArray<WHCourseModel *> arrayWithObjects:model1, model2, nil];
+        
+        WHCourseModel *model3 = [[WHCourseModel alloc]init];
+        model3.bgImgUrl = @"https://tva1.sinaimg.cn/large/008eGmZEly1gpjkqd6kq2j30ew0ewtbg.jpg";
+        model3.courseTitle = @"课程三名称";
+        model3.text = @"国";
+        
+        WHCourseModel *model4 = [[WHCourseModel alloc]init];
+        model4.bgImgUrl = @"https://tva1.sinaimg.cn/large/008eGmZEly1gpjkqfp8lnj30ew0ewgqd.jpg";
+        model4.courseTitle = @"课程四名称";
+        model4.text = @"字";
+        
+        
+        NSArray<WHCourseModel *> *models = [NSArray<WHCourseModel *> arrayWithObjects:model1, model2, model3, model4, nil];
         
         WHCoursesViewModel *coursesVM = [[WHCoursesViewModel alloc]initWithCourseModels:models];
         

@@ -41,6 +41,7 @@
 		D3D861DE2627250000B00CF9 /* XLCardSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = D3D861D72627250000B00CF9 /* XLCardSwitch.m */; };
 		D3D861DF2627250000B00CF9 /* XLCardModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D3D861DB2627250000B00CF9 /* XLCardModel.m */; };
 		D3D861E02627250000B00CF9 /* XLCardSwitchFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = D3D861DC2627250000B00CF9 /* XLCardSwitchFlowLayout.m */; };
+		D3D861EB26274B6000B00CF9 /* WHFullBasicButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D3D861EA26274B6000B00CF9 /* WHFullBasicButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -115,6 +116,8 @@
 		D3D861DA2627250000B00CF9 /* XLCardSwitch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLCardSwitch.h; sourceTree = "<group>"; };
 		D3D861DB2627250000B00CF9 /* XLCardModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLCardModel.m; sourceTree = "<group>"; };
 		D3D861DC2627250000B00CF9 /* XLCardSwitchFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLCardSwitchFlowLayout.m; sourceTree = "<group>"; };
+		D3D861E926274B6000B00CF9 /* WHFullBasicButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WHFullBasicButton.h; sourceTree = "<group>"; };
+		D3D861EA26274B6000B00CF9 /* WHFullBasicButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WHFullBasicButton.m; sourceTree = "<group>"; };
 		E80EAC15C3F911CBD53BC1E0 /* Pods___.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods___.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F802D401D9C65DFE4A0F1018 /* Pods-易书.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-易书.debug.xcconfig"; path = "Target Support Files/Pods-易书/Pods-易书.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -294,6 +297,8 @@
 				D3D8613B26266B5B00B00CF9 /* WHRecommendBar.m */,
 				D3D8614A2626791200B00CF9 /* WHBasicButton.h */,
 				D3D8614B2626791200B00CF9 /* WHBasicButton.m */,
+				D3D861E926274B6000B00CF9 /* WHFullBasicButton.h */,
+				D3D861EA26274B6000B00CF9 /* WHFullBasicButton.m */,
 			);
 			path = WHCustomView;
 			sourceTree = "<group>";
@@ -310,13 +315,13 @@
 		D3D861D42627250000B00CF9 /* XLCardSwitch */ = {
 			isa = PBXGroup;
 			children = (
+				D3D861D92627250000B00CF9 /* XLCardCell.h */,
 				D3D861D52627250000B00CF9 /* XLCardCell.m */,
 				D3D861D62627250000B00CF9 /* XLCardModel.h */,
-				D3D861D72627250000B00CF9 /* XLCardSwitch.m */,
-				D3D861D82627250000B00CF9 /* XLCardSwitchFlowLayout.h */,
-				D3D861D92627250000B00CF9 /* XLCardCell.h */,
-				D3D861DA2627250000B00CF9 /* XLCardSwitch.h */,
 				D3D861DB2627250000B00CF9 /* XLCardModel.m */,
+				D3D861D72627250000B00CF9 /* XLCardSwitch.m */,
+				D3D861DA2627250000B00CF9 /* XLCardSwitch.h */,
+				D3D861D82627250000B00CF9 /* XLCardSwitchFlowLayout.h */,
 				D3D861DC2627250000B00CF9 /* XLCardSwitchFlowLayout.m */,
 			);
 			name = XLCardSwitch;
@@ -458,6 +463,7 @@
 				D3D86144262671A900B00CF9 /* WHRecommendSectionViewController.m in Sources */,
 				D38FFCF62616C970004DCA90 /* WHMoreGuideViewModel.m in Sources */,
 				D3D180B9262325BC008BF57D /* WHDashBoardSectionViewController.m in Sources */,
+				D3D861EB26274B6000B00CF9 /* WHFullBasicButton.m in Sources */,
 				D38FFCF22616C79C004DCA90 /* WHHomeViewModel.m in Sources */,
 				D3D861E02627250000B00CF9 /* XLCardSwitchFlowLayout.m in Sources */,
 				D38FFCEC2616C347004DCA90 /* WHMoreGuideSectionViewController.m in Sources */,

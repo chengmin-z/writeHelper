@@ -105,7 +105,7 @@
         _collectionView =  [[UICollectionView alloc] initWithFrame:self.view.bounds
                                                      collectionViewLayout:[UICollectionViewFlowLayout new]];
         [_collectionView setBackgroundColor:[UIColor clearColor]];
-        [_collectionView setAlwaysBounceVertical:YES];
+        [_collectionView setAlwaysBounceVertical:NO];
     }
     return _collectionView;
 }

@@ -23,7 +23,7 @@
 {
     self = [super init];
     if (self) {
-        self.inset = UIEdgeInsetsMake(0, 0, 20.0, 0);
+        self.inset = UIEdgeInsetsMake(0, 0, 10, 0);
     }
     return self;
 }
@@ -53,7 +53,7 @@
 - (CGSize)sizeForItemAtIndex:(NSInteger)index
 {
     const CGFloat width = self.collectionContext.containerSize.width;
-    return CGSizeMake(width, 180.0);
+    return CGSizeMake(width, 155.0);
 }
 
 - (void)didUpdateToObject:(id)object

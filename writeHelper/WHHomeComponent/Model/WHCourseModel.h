@@ -11,6 +11,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface WHCourseModel : NSObject
 
+@property (nonatomic, strong, readwrite) NSString *courseTitle;
+
 @property (nonatomic, strong, readwrite) NSString *text;
 
 @property (nonatomic, strong, readwrite) NSString *bgImgUrl;

@@ -11,7 +11,7 @@
 
 #import "WHCoursesCell.h"
 
-@interface WHCourseSectionViewController ()
+@interface WHCourseSectionViewController ()<XLCardSwitchDelegate>
 
 @property (nonatomic, strong) WHCoursesViewModel *viewModel;
 
@@ -42,18 +42,27 @@
         cellClass = [WHCoursesCell class];
     }
     WHCoursesCell *cell = [self.collectionContext dequeueReusableCellOfClass:cellClass forSectionController:self atIndex:index];
+    [cell setXLDelegate:self];
+    [cell setCourseData:self.viewModel.courseModels];
     return cell;
 }
 
 - (CGSize)sizeForItemAtIndex:(NSInteger)index
 {
     const CGFloat width = self.collectionContext.containerSize.width;
-    return CGSizeMake(width, 268.0);
+    return CGSizeMake(width, 300);
 }
 
 - (void)didUpdateToObject:(id)object
 {
-    
+    if ([object isKindOfClass:WHCoursesViewModel.class]) {
+        self.viewModel = object;
+    }
+}
+
+#pragma mark - CardSwitchDelegate
+- (void)cardSwitchDidClickAtIndex:(NSInteger)index {
+    NSLog(@"点击了：%zd",index);
 }
 
 @end

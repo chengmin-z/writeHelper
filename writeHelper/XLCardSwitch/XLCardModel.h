@@ -12,6 +12,8 @@
 
 @property (nonatomic, copy) NSString *imageName;
 
+@property (nonatomic, copy) NSString *subTitle;
+
 @property (nonatomic, copy) NSString *title;
 
 @end

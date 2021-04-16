@@ -7,9 +7,17 @@
 
 #import <UIKit/UIKit.h>
 
+#import "XLCardSwitch.h"
+
+#import "WHCourseModel.h"
+
 NS_ASSUME_NONNULL_BEGIN
 
 @interface WHCoursesCell : UICollectionViewCell
+
+- (void)setXLDelegate:(id<XLCardSwitchDelegate>)delegate;
+
+- (void)setCourseData:(NSArray<WHCourseModel *> *)courseModels;
 
 @end
 
