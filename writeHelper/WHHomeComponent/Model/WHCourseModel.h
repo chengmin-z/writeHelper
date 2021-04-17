@@ -6,10 +6,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <Mantle/Mantle.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface WHCourseModel : NSObject
+@interface WHCourseModel : MTLModel<MTLJSONSerializing>
 
 @property (nonatomic, strong, readwrite) NSString *courseTitle;
 
