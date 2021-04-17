@@ -88,7 +88,7 @@
     self.selectedImage = [WHImageProcess reduceNoiseImage:self.selectedImage];
     self.selectedImage = [WHImageProcess thresholdImage:self.selectedImage];
     self.selectedImage = [WHImageProcess makeTransparent:self.selectedImage];
-    [self.previewView setPreviewImage:self.selectedImage];
+    [self.previewView setBackPreviewImage:self.selectedImage];
 }
 
 #pragma mark - Lazy Load

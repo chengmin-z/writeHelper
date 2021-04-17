@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D308754F262A98D8007D13B6 /* WHCourseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D308754E262A98D8007D13B6 /* WHCourseViewController.m */; };
 		D35E282D2612A94A006E6455 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D35E282C2612A94A006E6455 /* AppDelegate.m */; };
 		D35E28382612A94C006E6455 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D35E28372612A94C006E6455 /* Assets.xcassets */; };
 		D35E283E2612A94C006E6455 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D35E283D2612A94C006E6455 /* main.m */; };
@@ -48,6 +49,8 @@
 		37E5A824B91BEDD1999F1808 /* Pods-易书.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-易书.release.xcconfig"; path = "Target Support Files/Pods-易书/Pods-易书.release.xcconfig"; sourceTree = "<group>"; };
 		821358C87B861FC15CDDD7BD /* Pods-writeHelper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-writeHelper.release.xcconfig"; path = "Target Support Files/Pods-writeHelper/Pods-writeHelper.release.xcconfig"; sourceTree = "<group>"; };
 		AFF190D27F167E4B4124DABB /* Pods-writeHelper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-writeHelper.debug.xcconfig"; path = "Target Support Files/Pods-writeHelper/Pods-writeHelper.debug.xcconfig"; sourceTree = "<group>"; };
+		D308754D262A98D8007D13B6 /* WHCourseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WHCourseViewController.h; sourceTree = "<group>"; };
+		D308754E262A98D8007D13B6 /* WHCourseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WHCourseViewController.m; sourceTree = "<group>"; };
 		D35E28282612A94A006E6455 /* 易书.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "易书.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D35E282B2612A94A006E6455 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D35E282C2612A94A006E6455 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -229,6 +232,8 @@
 				D38FFCE22616307F004DCA90 /* WHHomeViewController.m */,
 				D38FFD012616EDEB004DCA90 /* WHCVTestViewController.h */,
 				D38FFD022616EDEB004DCA90 /* WHCVTestViewController.m */,
+				D308754D262A98D8007D13B6 /* WHCourseViewController.h */,
+				D308754E262A98D8007D13B6 /* WHCourseViewController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -461,6 +466,7 @@
 				D38FFCFE2616CE78004DCA90 /* WHMoreGuideCell.m in Sources */,
 				D3D8615926271D0400B00CF9 /* WHCourseModel.m in Sources */,
 				D3D86144262671A900B00CF9 /* WHRecommendSectionViewController.m in Sources */,
+				D308754F262A98D8007D13B6 /* WHCourseViewController.m in Sources */,
 				D38FFCF62616C970004DCA90 /* WHMoreGuideViewModel.m in Sources */,
 				D3D180B9262325BC008BF57D /* WHDashBoardSectionViewController.m in Sources */,
 				D3D861EB26274B6000B00CF9 /* WHFullBasicButton.m in Sources */,

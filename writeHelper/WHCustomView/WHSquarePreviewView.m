@@ -14,7 +14,8 @@
 @interface WHSquarePreviewView()
 
 @property (nonatomic, strong) UIImageView *backImageView;
-@property (nonatomic, strong) UIImageView *imageView;
+@property (nonatomic, strong) UIImageView *standardImageView;
+@property (nonatomic, strong) UIImageView *inputImageView;
 
 @end
 
@@ -25,7 +26,7 @@
     if (self = [super init]) {
         [self configUI];
         [self setupSubviews];
-        [self setPreviewImage:image];
+        [self setBackPreviewImage:image];
     }
     return self;
 }
@@ -42,7 +43,8 @@
 - (void)setupSubviews
 {
     [self addSubview:self.backImageView];
-    [self addSubview:self.imageView];
+    [self addSubview:self.standardImageView];
+    [self addSubview:self.inputImageView];
     [self layoutSubviews];
 }
 
@@ -55,7 +57,14 @@
         make.centerY.equalTo(self);
     }];
     
-    [self.imageView mas_makeConstraints:^(MASConstraintMaker *make) {
+    [self.standardImageView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.width.equalTo(self.backImageView).offset(-10);
+        make.height.equalTo(self.backImageView).offset(-10);
+        make.centerX.equalTo(self);
+        make.centerY.equalTo(self);
+    }];
+    
+    [self.inputImageView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.width.equalTo(self.backImageView).offset(-10);
         make.height.equalTo(self.backImageView).offset(-10);
         make.centerX.equalTo(self);
@@ -63,20 +72,44 @@
     }];
 }
 
-- (void)setPreviewImage:(UIImage *)image
+- (void)setBackPreviewImageHidden:(BOOL)hidden
 {
-    [self.imageView setImage:image];
+    [self.standardImageView setHidden:hidden];
+}
+
+- (void)setInputPreviewImageHidden:(BOOL)hidden
+{
+    [self.inputImageView setHidden:hidden];
+}
+
+- (void)setBackPreviewImage:(UIImage *)image
+{
+    [self.standardImageView setImage:image];
+}
+
+- (void)setInputPreviewImage:(UIImage *)image
+{
+    [self.inputImageView setImage:image];
 }
 
 #pragma mark - Lazy Load
 
-- (UIImageView *)imageView
+- (UIImageView *)inputImageView
 {
-    if (!_imageView) {
-        _imageView = [[UIImageView alloc]init];
-        [_imageView setContentMode:UIViewContentModeScaleAspectFit];
+    if (!_inputImageView) {
+        _inputImageView = [[UIImageView alloc]init];
+        [_inputImageView setContentMode:UIViewContentModeScaleAspectFit];
     }
-    return _imageView;
+    return _inputImageView;
+}
+
+- (UIImageView *)standardImageView
+{
+    if (!_standardImageView) {
+        _standardImageView = [[UIImageView alloc]init];
+        [_standardImageView setContentMode:UIViewContentModeScaleAspectFit];
+    }
+    return _standardImageView;
 }
 
 - (UIImageView *)backImageView

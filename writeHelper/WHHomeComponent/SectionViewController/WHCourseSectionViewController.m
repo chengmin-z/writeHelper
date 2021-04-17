@@ -8,8 +8,8 @@
 #import "WHCourseSectionViewController.h"
 
 #import "WHCoursesViewModel.h"
-
 #import "WHCoursesCell.h"
+#import "WHCourseViewController.h"
 
 #import <AFNetworking/AFNetworking.h>
 #import <ReactiveObjC/ReactiveObjC.h>
@@ -95,7 +95,10 @@
 
 #pragma mark - CardSwitchDelegate
 - (void)cardSwitchDidClickAtIndex:(NSInteger)index {
-    NSLog(@"点击了：%ld",(long)index);
+    WHCourseModel *currentCourseModel = [self.viewModel.courseModels objectAtIndex:index];
+    WHCourseViewController *desVC = [[WHCourseViewController alloc]initWithCourseModel:currentCourseModel];
+    desVC.hidesBottomBarWhenPushed = YES;
+    [self.viewController.navigationController pushViewController:desVC animated:YES];
 }
 
 @end
