@@ -15,12 +15,9 @@
 
 @implementation WHCoursesViewModel
 
-- (instancetype)initWithCourseModels:(NSArray<WHCourseModel *> *)courseModels
+- (void)setCourseModels:(NSArray<WHCourseModel *> *)courseModels
 {
-    if (self = [super init]) {
-        self.courseModels = [courseModels copy];
-    }
-    return self;
+    _courseModels = courseModels;
 }
 
 - (nonnull id<NSObject>)diffIdentifier

@@ -17,7 +17,13 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (instancetype)new NS_UNAVAILABLE;
 
-- (void)setPreviewImage:(UIImage *)image;
+- (void)setBackPreviewImage:(UIImage *)image;
+
+- (void)setInputPreviewImage:(UIImage *)image;
+
+- (void)setBackPreviewImageHidden:(BOOL)hidden;
+
+- (void)setInputPreviewImageHidden:(BOOL)hidden;
 
 @end
 

@@ -9,4 +9,14 @@
 
 @implementation WHCourseModel
 
++ (NSDictionary *)JSONKeyPathsByPropertyKey
+{
+    return @{
+        @"courseTitle" : @"course_title",
+        @"text" : @"text",
+        @"bgImgUrl" : @"back_img",
+        @"textImgUrl" : @"text_img"
+    };
+}
+
 @end

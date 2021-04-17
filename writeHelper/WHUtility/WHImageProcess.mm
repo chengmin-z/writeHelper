@@ -44,7 +44,8 @@ using namespace cv;
     return MatToUIImage(mat_image_dst);
 }
 
-+ (UIImage *)makeTransparent:(UIImage *)image{
++ (UIImage *)makeTransparent:(UIImage *)image
+{
     Mat mat_image;
     UIImageToMat(image, mat_image);
     Mat mat_final;
@@ -54,6 +55,27 @@ using namespace cv;
             Vec4b & pixel = mat_final.at<Vec4b>(y, x);
             if(pixel[0] == 255 && pixel[1] == 255 && pixel[2] == 255) {
                 pixel[3] = 0;
+            }
+        }
+    }
+    return MatToUIImage(mat_final);
+}
+
++ (UIImage *)makeTransparentImage:(UIImage *)image AndToR:(NSInteger)r G:(NSInteger)g B:(NSInteger)b
+{
+    Mat mat_image;
+    UIImageToMat(image, mat_image);
+    Mat mat_final;
+    cvtColor(mat_image, mat_final, COLOR_GRAY2BGRA);
+    for(int y = 0; y < mat_final.rows; ++y) {
+        for(int x =0; x < mat_final.cols; ++x) {
+            Vec4b & pixel = mat_final.at<Vec4b>(y, x);
+            if(pixel[0] + pixel[1] + pixel[2] > 700) {
+                pixel[3] = 0;
+            } else {
+                pixel[0] = r;
+                pixel[1] = g;
+                pixel[2] = b;
             }
         }
     }

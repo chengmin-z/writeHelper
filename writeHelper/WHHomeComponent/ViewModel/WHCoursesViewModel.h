@@ -17,9 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, strong, readonly) NSArray<WHCourseModel *> *courseModels;
 
-- (instancetype)initWithCourseModels:(NSArray<WHCourseModel *> *)courseModels;
-
-- (instancetype)init NS_UNAVAILABLE;
+- (void)setCourseModels:(NSArray<WHCourseModel *> *)courseModels;
 
 + (instancetype)new NS_UNAVAILABLE;
 

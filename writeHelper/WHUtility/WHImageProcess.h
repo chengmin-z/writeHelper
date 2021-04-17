@@ -19,6 +19,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (UIImage *)makeTransparent:(UIImage *)image;
 
++ (UIImage *)makeTransparentImage:(UIImage *)image AndToR:(NSInteger)r G:(NSInteger)g B:(NSInteger)b;
+
 @end
 
 NS_ASSUME_NONNULL_END
